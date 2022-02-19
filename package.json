@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "startServer": "(cd Backend && npm start)",
-    "startClient": "(cd Frontend && npm start)",
+    "startServer": "(cd Backend && npm install && npm start)",
+    "startClient": "(cd Frontend && npm install && npm start)",
     "dev": "concurrently \"npm run startServer\" \"npm run startClient\""
   },
   "author": "",
