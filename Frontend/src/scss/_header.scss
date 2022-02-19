@@ -1,0 +1,133 @@
+.header {
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $breakpoint-small) {
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 10rem;
+    margin-top: 0.5rem;
+
+    @media only screen and (max-width: $breakpoint-small) {
+      margin-top: -1rem;
+    }
+  }
+
+  &__main-nav {
+    margin-right: auto;
+    margin-top: 2.3rem;
+    margin-left: 6rem;
+
+    @media only screen and (max-width: $breakpoint-small) {
+      display: none;
+    }
+
+    @media only screen and (max-width: $breakpoint-smaller) {
+      display: none;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        a {
+          text-decoration: none;
+          margin-left: 5rem;
+          color: $color-grey-dark-1;
+          font-size: 1rem;
+          font-weight: 600;
+
+          &:first-child {
+            margin-left: 10rem;
+          }
+          &:last-child {
+            margin-left: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__cart {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+
+    &--nav {
+      @media only screen and (max-width: $breakpoint-small) {
+        display: none;
+      }
+    }
+
+    svg {
+      width: 2rem;
+      fill: $color-dark-pink;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin-left: 1rem;
+
+      li {
+        a {
+          text-decoration: none;
+          color: $color-grey-dark-1;
+          font-weight: 500;
+
+          &:last-child {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__container {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 0.2rem;
+      bottom: 0;
+      box-shadow: $box-shadow-1;
+      position: absolute;
+    }
+  }
+}
+
+.menu-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: $color-dark-pink;
+}
+
+.menu-btn {
+  display: none;
+
+  @media only screen and (max-width: $breakpoint-small) {
+    display: block;
+  }
+}
+
+.cart__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-grey-light-1;
+  padding: 1rem;
+  margin-right: 3rem;
+  gap: 0.5rem;
+  cursor: pointer;
+  // z-index: 1000;
+
+  span {
+    display: inline-block;
+  }
+}

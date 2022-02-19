@@ -1,0 +1,36 @@
+/////////colors//////////////
+$color-light-pink: #fff5f5;
+
+$color-grey-dark-1: #495057;
+$color-grey-dark-2: #888;
+$color-grey-light-1: #e9ecef;
+$color-grey-light-2: #b9b9b9;
+
+$color-dark-pink: #a61e4d;
+
+/////////////////////////
+$transition: all 0.5s;
+
+/////////////////////////////
+$box-shadow-1: 0 0.2rem 0.2rem 0px rgb(206, 212, 218, 0.4);
+$box-shadow-2: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.6);
+$box-shadow-3: 0 0.1rem 0.1rem 0px rgb(206, 212, 218, 0.8);
+$box-shadow-4: 0.2rem 0.2rem 0.4rem 0.1rem rgba(0, 0, 0, 0.3);
+$box-shadow-curve: radial-gradient(
+  farthest-corner at 45% 0px,
+  grey -53%,
+  transparent 50%
+);
+
+/////////////////////////
+$background-color: rgba(255, 255, 255, 0.2);
+
+
+//////////////////////
+
+$breakpoint-medium: 37.5em; //600px
+$breakpoint-medium-large: 43.75em; //700px
+$breakpoint-large: 56.25em; //900px
+$breakpoint-medium-small: 31.25em; //500px
+$breakpoint-small: 25em; //400px
+$breakpoint-smaller: 18.75em; //300px

@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
+
+  @media only screen and (max-width: $breakpoint-smaller) {
+    font-size: 36%;
+  }
+
+  @media only screen and (max-width: $breakpoint-medium) {
+    font-size: 45%;
+  }
+
+  @media only screen and (max-width: $breakpoint-medium-large) {
+    font-size: 50%;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.main {
+  max-width: 80%;
+  margin: 3rem auto;
+
+  @media only screen and (max-width: $breakpoint-medium) {
+    max-width: 100%;
+  }
+}
+
+//////////common classes styles///////////
+.btn {
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  background-color: $color-dark-pink;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  @media only screen and (max-width: $breakpoint-smaller) {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+.heading-2 {
+  font-size: 1.5rem;
+  @media only screen and (max-width: $breakpoint-smaller) {
+    font-size: 1rem;
+  }
+}

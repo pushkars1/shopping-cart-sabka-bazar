@@ -1,0 +1,33 @@
+<section class="products">
+  {{#with data}}
+  {{#each categories}}
+  {{#checkIfEven @index}}
+<figure class="products__category">
+      <img
+          src="{{../imageURL}}{{imageUrl}}"
+          class="products__category--img"
+      />
+      <div class="products__category--details">
+        <h2 class="heading-2">{{name}}</h2>
+        <p>{{description}}</p>
+        <a href="/products#{{id}}" class="btn" data-link data-link-id="{{id}}">Explore {{key}}</a>
+      </div>
+    </figure>
+    {{else}}
+    <figure class="products__category">
+      <div class="products__category--details">
+        <h2 class="heading-2">{{name}}</h2>
+        <p>{{description}}</p>
+        <a href="/products#{{id}}" class="btn" data-link data-link-id="{{id}}">Explore {{key}}</a>
+      </div>
+      
+        <img
+          src="{{../imageURL}}{{imageUrl}}"
+          class="products__category--img"
+        />
+    </figure>
+
+    {{/checkIfEven}}
+  {{/each}}
+  {{/with}}
+</section>

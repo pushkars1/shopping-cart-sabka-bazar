@@ -1,0 +1,16 @@
+{
+  "name": "finalcasestudyprojects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "startServer": "(cd Backend && npm start)",
+    "startClient": "(cd Frontend && npm start)",
+    "dev": "concurrently \"npm run startServer\" \"npm run startClient\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

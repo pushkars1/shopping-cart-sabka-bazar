@@ -1,0 +1,24 @@
+<aside class="products__gallery--sidebar">
+  <nav class="products__gallery--nav">
+  </nav>
+</aside>
+<div class="dropdown">
+</div>
+<section class="products__gallery--products">
+  {{#each products}}
+  <div class="products__gallery--product-details">
+    <h2 class="heading-2">{{name}}</h2>
+    <img
+      src="{{../baseURL}}{{imageURL}}"
+      class="products__gallery--product-details-img"
+    />
+    <p class="products__gallery--product-details-description">
+      {{description}}
+    </p>
+    <div class="products__gallery--product-details-buying-details">
+      <span>Rs.{{price}}</span>
+      <button class="btn btn-buy-now"  data-product-id="{{id}}">Buy Now</button>
+    </div>
+  </div>
+  {{/each}}
+</section>

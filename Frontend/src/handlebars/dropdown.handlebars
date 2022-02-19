@@ -1,0 +1,29 @@
+<input
+  type="text"
+  class="textbox"
+  id="dropdown__input"
+  readonly
+  placeholder="Dropdown Menu"
+/>
+<div class="option">
+  <div
+    data-name="All Products"
+    data-id="allproducts"
+    class="option--item"
+    data-option-item
+    data-link
+  >
+    All Products
+  </div>
+  {{#each categories}}
+    <div
+      data-name="{{name}}"
+      data-id="{{id}}"
+      class="option--item"
+      data-option-item
+      data-link
+    >
+      {{name}}
+    </div>
+  {{/each}}
+</div>

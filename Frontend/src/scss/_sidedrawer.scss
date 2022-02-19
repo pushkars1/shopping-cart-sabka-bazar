@@ -1,0 +1,37 @@
+.side-drawer {
+  position: absolute;
+  right: 0.2rem;
+  height: auto;
+  top: 5rem;
+  width: 31%;
+  z-index: 0;
+  overflow: hidden;
+
+  @media only screen and (min-width: $breakpoint-small) {
+    display: none;
+  }
+
+  &__nav {
+    transform: translate(200%);
+    transition: $transition;
+    background-color: $color-dark-pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: .9rem;
+
+    a {
+      display: block;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  &__active {
+    transform: translateX(0);
+    z-index: 100;
+  }
+}

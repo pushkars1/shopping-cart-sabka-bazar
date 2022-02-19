@@ -1,0 +1,8 @@
+<a href="#allproducts" class="nav--link {{#checkForActive 'allproducts' hashId}}is_Active{{else}}''{{/checkForActive}}" data-nav-id="allproducts"><figure
+    class="products__gallery--nav-link"
+  >All Products</figure></a>
+{{#each categories}}
+  <a href="#{{id}}" class="nav--link {{#checkForActive id ../hashId}}is_Active{{else}}''{{/checkForActive}}" data-nav-id="{{id}}"><figure
+      class="products__gallery--nav-link"
+    >{{name}}</figure></a>
+{{/each}}

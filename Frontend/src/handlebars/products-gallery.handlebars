@@ -1,0 +1,16 @@
+ {{#each products}}
+  <div class="products__gallery--product-details">
+    <h2 class="heading-2">{{name}}</h2>
+    <img
+      src="{{../baseURL}}{{imageURL}}"
+      class="products__gallery--product-details-img"
+    />
+    <p class="products__gallery--product-details-description">
+      {{description}}
+    </p>
+    <div class="products__gallery--product-details-buying-details">
+      <span>Rs.{{price}}</span>
+      <button class="btn btn-buy-now"  data-product-id="{{id}}">Buy Now</button>
+    </div>
+  </div>
+  {{/each}}
